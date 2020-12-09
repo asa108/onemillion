@@ -4,12 +4,12 @@ const btn = document.getElementById("count-up");
 count = 10;
 
 addAnimation = () => {
-  btn.classList.add("animate__animated", "animate__bounce");
+  btn.classList.add("yureru-js");
 };
 
-removeAnimation = () => {
-  btn.classList.remove("animate__animated", "animate__bounce");
-};
+// removeAnimation = () => {
+//   btn.classList.remove("yureru-js");
+// };
 
 up.addEventListener("click", () => {
   count--;
@@ -29,7 +29,7 @@ up.addEventListener("click", () => {
 up.addEventListener(
   "animationend",
   () => {
-    btn.classList.remove("animate__animated", "animate__bounce");
+    btn.classList.remove("yureru-js");
   },
   false
 );
